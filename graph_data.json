@@ -1,0 +1,83 @@
+{
+  "nodes": [
+    {
+      "id": "1JQvJDBEAiDVeRqtEoqNWNMe1fgyJFhyWj",
+      "index": 0,
+      "centrality": 0.0,
+      "is_suspicious": true,
+      "reasons": [
+        "Circular money flow detected",
+        "Rapid back-and-forth transactions"
+      ],
+      "tx_count": 4,
+      "total_amount": 1.21735247
+    },
+    {
+      "id": "bc1qyqll9vkxn9duv2cu9hatuanlee76m3wqzcwvk9",
+      "index": 1,
+      "centrality": 0.0,
+      "is_suspicious": true,
+      "reasons": [
+        "Circular money flow detected"
+      ],
+      "tx_count": 1,
+      "total_amount": 0.59998895
+    },
+    {
+      "id": "19zS1Kd5Pn6hMeZjZ2NJHrSCE8VTmf1Qov",
+      "index": 2,
+      "centrality": 0.0,
+      "is_suspicious": true,
+      "reasons": [
+        "Circular money flow detected"
+      ],
+      "tx_count": 1,
+      "total_amount": 0.01736352
+    }
+  ],
+  "edges": [
+    {
+      "source": "1JQvJDBEAiDVeRqtEoqNWNMe1fgyJFhyWj",
+      "target": "bc1qyqll9vkxn9duv2cu9hatuanlee76m3wqzcwvk9",
+      "amount": 0.59998895,
+      "suspicious": true,
+      "reasons": [
+        "Circular money flow detected"
+      ]
+    },
+    {
+      "source": "1JQvJDBEAiDVeRqtEoqNWNMe1fgyJFhyWj",
+      "target": "19zS1Kd5Pn6hMeZjZ2NJHrSCE8VTmf1Qov",
+      "amount": 0.01736352,
+      "suspicious": true,
+      "reasons": [
+        "Circular money flow detected"
+      ]
+    },
+    {
+      "source": "1JQvJDBEAiDVeRqtEoqNWNMe1fgyJFhyWj",
+      "target": "1JQvJDBEAiDVeRqtEoqNWNMe1fgyJFhyWj",
+      "amount": 0.6,
+      "suspicious": true,
+      "reasons": [
+        "Circular money flow detected",
+        "Rapid back-and-forth transactions"
+      ]
+    }
+  ],
+  "fraud_analysis": {
+    "high_centrality_nodes": [],
+    "large_amount_threshold": 0.68043902284351,
+    "circular_flow_nodes": [
+      "1JQvJDBEAiDVeRqtEoqNWNMe1fgyJFhyWj"
+    ],
+    "rapid_exchange_pairs": [
+      [
+        "1JQvJDBEAiDVeRqtEoqNWNMe1fgyJFhyWj",
+        "1JQvJDBEAiDVeRqtEoqNWNMe1fgyJFhyWj"
+      ]
+    ],
+    "total_transactions": 3,
+    "mean_amount": 0.4057841566666666
+  }
+}
